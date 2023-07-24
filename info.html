@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographics</title>
+    <link rel="icon" type="android-chrome-192x192/x-icon" href="./assets/images/android-chrome-192x192.png">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: whitesmoke; /* Light green background */
+          margin: 0;
+          padding: 0;
+        }
+    
+        .infographic {
+          max-width: 600px;
+          margin: 50px auto;
+          background-color: rgb(247, 236, 222); /* Light beige container */
+          padding: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+        }
+    
+        h2 {
+          text-align: center;
+          color: black; /* Dark green header text */
+          margin-bottom:20px;
+        }
+    
+        .bar-chart {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          background-color: #dce2c8; /* Light green chart background */
+          padding: 10px;
+          border-radius: 6px;
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+    
+        .bar {
+          position: relative;
+          flex: 1;
+          background-color: #3e6c39; /* Dark green bars */
+          border-radius: 6px;
+          cursor: pointer;
+          transition: height 0.3s ease-in-out;
+          border: 2px solid black;
+          margin-right: 5px;
+          
+        }
+    
+        .bar:hover {
+          height: 180px; /* Adjust this value to change the bar height */
+        }
+    
+        .bar-label {
+          margin-top: 5px;
+          text-align: center;
+          color: #555;
+        }
+    
+        .info-box {
+         background-color:#dce2c8;
+          color:black;
+          padding: 10px;
+          border-radius: 6px;
+          position: absolute;
+          top: -100px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        .bar:hover .info-box {
+          opacity: 1;
+        }
+    
+        .animal-image {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        p {
+          text-align: center;
+          font-size: 14px;
+          color: #555;
+          margin-top: 20px;
+        }
+        #title{
+        text-align:left;
+        margin:20px;
+        font-size: 40px;
+        font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+
+    }
+    .header {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    gap: 2px; /* Set the gap between title and image */
+}
+
+      </style>
+</head>
+<body>
+    <div class="header">
+        <img style="margin-left: 10px;"src="./assets/images/favicon-32x32.png" alt="">
+        <h1 id="title">Endan<span style="color:tan">gramics</span> </h1> 
+    </div>
+     <hr/>
+    <div class="infographic">
+        <h2>Endangered Species Infographic</h2>
+        <div class="bar-chart">
+          <div class="bar" style="height: 100px;">
+            <div class="info-box">
+              <img class="animal-image" src="https://images.unsplash.com/photo-1499711662666-663aca693cde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3VifGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60/80" alt="Tiger">
+              <strong>Tiger</strong><br>
+              Only 2,500 left
+            </div>
+          </div>
+          <div class="bar" style="height: 80px;">
+            <div class="info-box">
+              <img class="animal-image" src="https://images.unsplash.com/photo-1527118732049-c88155f2107c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuZGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60/80" alt="Panda">
+              <strong>Panda</strong><br>
+              Only 1,864 left
+            </div>
+          </div>
+          <div class="bar" style="height: 60px;">
+            <div class="info-box">
+              <img class="animal-image" src="https://images.unsplash.com/photo-1463852247062-1bbca38f7805?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y3V0ZSUyMGdvcmlsbGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60/80" alt="Gorilla">
+              <strong>Gorilla</strong><br>
+              Only 880 left
+            </div>
+          </div>
+        </div>
+        <p>Hover over the bars to see the population of each species.</p>
+</body>
+</html>

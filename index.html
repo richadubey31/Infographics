@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endangered Species Infographic</title>
+  <link rel="icon" type="android-chrome-192x192/x-icon" href="./assets/images/android-chrome-192x192.png">
+  <style>
+    body{
+      background-color: rgb(171, 229, 171);
+        margin:0;
+        padding:0;
+    }
+    nav{
+      background-color: rgb(201, 240, 201);
+      display: flex;
+      justify-content: space-around;
+      height:80px;
+      align-items: center;
+    }
+    nav ul{
+      display:flex;
+      justify-content: center;
+    }
+    nav ul li{
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav li a{
+      text-decoration: none;
+      color:black;
+    }
+    nav li a:hover{
+      font-size: 1.01rem;
+    }
+     .left{
+      font-size: 1.5rem;
+     }
+    .image-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .image {
+      width: 60vw;
+      height:30vw;
+    }
+    .view-infographics{
+      display: inline-block;
+      background-color:rgb(245, 219, 183);
+      color: #0a0909;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .view-infographics:hover {
+      background-color:rgb(182, 138, 81) ;
+    }
+    #element{
+      text-align: center;
+      font-size: 20px;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+   
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">
+        <h1 >Enden<span style="color:tan">gramics</span> </h1> 
+    </div>
+      <div class="right">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header> 
+     <hr/>
+    <h1 style="text-align:center">Empowering Conservation: </h1>
+    <span id="element"></span>
+    <div class="image-container">
+        <img class="image" src="./assets/images/InShot_20230722_193211620.jpg" height="100px" width="200px" alt="">
+       <br>
+        <a class="view-infographics" href="./info.html">Want to know population?</a>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Dive into Endangered Species Infographics'],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
